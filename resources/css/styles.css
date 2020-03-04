@@ -339,6 +339,7 @@ html {
     background-size: cover;
     background-position: center;
     height: 600px;
+    background-attachment: fixed;
 }
 
 .contact-grid {
