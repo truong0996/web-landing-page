@@ -236,17 +236,6 @@ html {
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    width: 220px;
-    height: 65px;
-    border-radius: 25px;
-    border: none;
-    background-color: rgb(250, 126, 43);
-    color: #fff;
-    outline: none;
-    font-size: 100%;
-    text-align: center;
-    transition: 500ms;
 }
 
 .product-btn:hover {
@@ -307,12 +296,147 @@ html {
     transition: 500ms;
 }
 
+.sponsor {
+    background-color: #ececec;
+    padding-bottom: 50px;
+}
+
 .sponsor-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,200px);
-    grid-row-gap: 30px;
+    grid-template-rows: repeat(2, 200px);
+    grid-row-gap: 80px;
     grid-column-gap: 50px;
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0 auto;
+}
+
+.logo-sponsor {
+    cursor: pointer;
+}
+
+.logo-sponsor img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 500ms;
+}
+
+.logo-sponsor img {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.logo-sponsor .club-name {
+    font-weight: 700;
+    font-size: 140%;
+    text-align: center;
+    color: #062f58;
+}
+
+.contact {
+    background-image: linear-gradient(45deg, rgba(38, 80, 119, 0.7) 55%, rgba(100, 134, 165, 0.5)), url(../img/background5.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.contact-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+.address {
+    position: relative;
+}
+
+.address-infos {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+.address-info {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 120%;
+}
+
+.address-info i {
+    margin-right: 20px;
+    color: #ae94f5;
+}
+
+.address-info p {
+    color: white;
+}
+
+.mail-icons {
+    position: absolute;
+    color: white;
+    top: 75%;
+    left: 20%;
+}
+
+.mail-icons i {
+    margin-left: 30px;
+    font-size: 250%;
+}
+
+.mail-icons i:hover {
+    transform: scale(1.3, 1.3);
+    color: #ff9100;
+    transition: 500ms;
+}
+
+.feedback {
+    background-color: rgba(7, 8, 63, 0.5);
+    width: 70%;
+    margin: 80px 0;
+}
+
+.feedback-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 20px 20px;
+}
+
+.feedback-row p {
+    grid-column: 1/4;
+    color: white;
+    font-weight: 500;
+    font-size: 150%;
+}
+
+.feedback-row input,
+.feedback-row textarea {
+    grid-column: 5/13;
+    height: 60px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: rgba(46, 46, 46, 0.7);
+    outline: none;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.feedback-row textarea {
+    height: 120px;
+    padding-top: 10px;
+}
+
+.feedback-row input:focus,
+.feedback-row textarea:focus {
+    background-color: rgba(24, 24, 24, 0.8);
+    transition: all 0.8s;
+}
+
+.send-btn {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
 }
