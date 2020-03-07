@@ -174,7 +174,7 @@ html {
     position: relative;
     height: 450px;
     width: 100%;
-    background-color: #ececec;
+    background-color: #DDDDDD;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
@@ -235,6 +235,7 @@ html {
     position: absolute;
     top: 85%;
     left: 50%;
+    width: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -439,5 +440,5 @@ html {
 .send-btn {
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 35px;
 }
